@@ -33,7 +33,7 @@ public class GridInstantiate : MonoBehaviour {
 		}
 
 		if (genPathRate > 0.3f){
-			Transform newItem = (Transform) Instantiate ( genPath, transform.position,transform.rotation);
+			Instantiate ( genPath, transform.position,transform.rotation);
 		} else {
 			GameObject.Find("Main Camera").GetComponent<ResetLevel>().ShowBtn();
 			//Instantiate (genRoom, transform.position, transform.rotation);
